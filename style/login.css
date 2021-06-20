@@ -1,0 +1,91 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../imgs/login-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.login .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login .login-form {
+  width: 25vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .login .login-form {
+    width: 95vw;
+    height: 50vh;
+  }
+}
+
+.login .login-form h1 {
+  color: #EEE;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.login .login-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login-form form input {
+  margin-bottom: 20px;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #24d26c;
+  outline: 0;
+  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #777;
+}
+
+.login .login-form form input:focus {
+  border-color: royalblue;
+}
+
+.login .login-form form button {
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #24d26c;
+  border: 0;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login .login-form form button:hover {
+  background-color: seagreen;
+}
+/*# sourceMappingURL=login.css.map */
